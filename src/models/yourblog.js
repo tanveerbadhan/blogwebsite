@@ -7,7 +7,7 @@ const yourblogschema = new mongoose.Schema({
     name:String,
     heading:String,
     date:String,
-    file:String,
+    filepath:String,
     experience:String
 });
 

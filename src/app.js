@@ -1,7 +1,13 @@
+if(process.env.NODE_ENV !== "production"){
+    require("dotenv").config();
+}
+
 const express = require("express");
 const path = require("path");
 const ejs = require("ejs");
-const multer =  require("multer");
+const multer = require("multer");
+const cloudinary = require("cloudinary").v2;
+const {CloudinaryStorage} = require("multer-storage-cloudinary");
 const app = express();
 require("./db/conn");
 const Contact = require("./models/contact"); 
@@ -128,34 +134,42 @@ app.post("/contactus",async(req,res)=>{
  }
 });
 
-var Storage = multer.diskStorage({
-    destination:"./public/uploads",
-    filename:(req,file,cb)=>{
-        cb(null,file.fieldname+"_"+Date.now()+path.extname(file.originalname));
-    }
+
+cloudinary.config({
+    cloud_name:process.env.CLOUDINARY_CLOUD_NAME,
+    api_key:process.env.CLOUDINARY_KEY,
+    api_secret:process.env.CLOUDINARY_SECRET
 });
-var upload = multer({
- storage:Storage
-}).single("file");
+
+const storage = new CloudinaryStorage({
+    cloudinary,
+    params:{folder:"yourposts",
+    allowedFormats:["jpeg","png","jpg"]}
+    
+});
+
+
+var upload = multer({storage}).single("file");
 
 app.post("/yourblogsus",upload,async(req,res)=>{
- try {
-    
-    const yourblogform = new Yourblog({
-            name:req.body.name,
-            heading:req.body.heading,
-            date:req.body.date,
-            file:req.file.filename,
-            experience:req.body.experience
+    try {
        
-    });
-    
-    const yourblogformsub = await yourblogform.save();
-    res.status(201).redirect("/yourblogs");
- } catch (error) {
-     res.status(400).send(error);
- }
-});
+       const yourblog = new Yourblog({
+               name:req.body.name,
+               heading:req.body.heading,
+               date:req.body.date,
+               filepath:req.file.path,
+               experience:req.body.experience
+          
+       })
+       
+       const yourblogsub = await yourblog.save();
+       res.status(201).redirect("yourblogs");
+    } catch (error) {
+        console.log(error);
+        res.status(400).send(error);
+    }
+   });
 
 app.post("/comment",async(req,res)=>{
    

@@ -22,7 +22,7 @@
     <div class="articles maxwidth1 mauto">
     <%for(var i=0;i<yourblogdata.length ; i++){ %>
     <div class="article maxwidth2 ">
-        <img src="uploads/<%=yourblogdata[i].file%>" alt="Unable to load Image">
+        <img src="<%=yourblogdata[i].filepath%>" alt="Unable to load Image" >
         <div class="articlecontent">
             <div class="heading"><%=yourblogdata[i].heading%>.</div>
             <div class="actualarticle"><%=yourblogdata[i].experience%>. </div>
