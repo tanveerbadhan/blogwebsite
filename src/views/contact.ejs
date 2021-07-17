@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>website</title>
+</head>
+
+<body>
+
+
+    <%-include("partials/navbar")%> 
+
+
+
+
+    <div class="contact-content">
+        <div class="Form maxwidth2 mauto">
+       <form action="contactus" method="POST">
+                <div class="formtop">
+                    <div class="formleft">
+                        <div class="details"><input class="contactblanks" type="text" placeholder="First Name" name="firstname"></div>
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Last Name" name="lastname"></div>
+                        
+                    </div>
+                    <div class="formright">
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Email" name="email"></div>
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Phone Number" name="phoneno"></div>
+                    </div>
+                </div>
+                
+                <div class="formbottom">
+                    <div class="feedback"><textarea class="contactblanks feed" name="suggestion" id="" cols="30" rows="10"
+                            placeholder="Your Suggestion"></textarea></div>
+                    <div class="submit"><input class="contactblanks sub" type="submit" value="submit"></div>
+                </div>
+
+
+          </form>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <%-include("partials/footer")%>

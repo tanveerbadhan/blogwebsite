@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+   box-sizing: border-box;
+    
+
+}
+a{
+    text-decoration: none;
+}
+.articles{
+    padding-top: 20px;
+}
+.article .articleheading{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    color: #3d3e39;
+}
+.article .dateauthor{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+.article .articlecontent .heading{
+    padding-top: 20px;
+    font-size:25px;
+    color: #3d3e39;
+}
+.youcanreadsheading{
+        padding: 50px 0 4px 0;
+        border-bottom: 1px solid rgb(239 232 232);
+        color: #755454;
+}
+.youcanreads {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+
+}
+.youcanreads .youcanread .youcanreadarticlecontent{
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.youcanreads .youcanread .youcanreadheading{
+    font-size: 21px;
+    text-align: center;
+}
+.youcanreads .youcanread .youcanreadactualarticle{
+    font-size: 12px;
+    padding: 0 20px;
+}
+.youcanreads .youcanread .youcanreaddateauthor{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+.youcanreads .youcanread img {
+    display: block;
+    width:100%;
+    
+}
+.youcanreads .youcanread{
+border: 1px solid rgb(236 236 236);
+justify-content: space-around;
+}
+
+
+
+

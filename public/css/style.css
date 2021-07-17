@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+   box-sizing: border-box;
+
+}
+
+.navigationbar{
+
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+.openbutton{
+    cursor: pointer;
+    display: none;
+}
+.navigationbar .phone 
+{  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
+    display: none;
+    background-color: #403b3b;
+}
+.navigationbar .phone .phonenavops
+{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+    
+}
+.navigationbar .phone .phonenavop
+{
+    list-style: none;
+    text-align: center; 
+}
+.navigationbar .phone .phonenavop a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    display: block;
+    padding: 20px 0;
+}
+.navigationbar .phone .phonenavop a:active{
+    background-color: #2f2d2d;
+}
+
+.navigationbar .phone .phonenavop a:hover{
+    background-color: #2f2d2d;
+}
+
+.navigationbar .left .navops{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    width:100%;
+}
+.navigationbar .left{
+    width:50%;
+    display: flex;
+}
+.navigationbar .left .logo{
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.navigationbar .left .logo a{
+    text-decoration: none;
+}
+.navigationbar .left .navops .navop a{
+    text-decoration: none;
+   
+    
+}
+.navigationbar .left .navops .navop a:hover{
+    border-bottom: 1px solid;
+}
+
+.navigationbar .right{
+   width:35%;
+}
+.navigationbar .right .search{
+    border: none;
+    border-bottom: 1px solid;
+    padding:1px;
+    outline: none;
+    width: 70%;
+}
+.navigationbar .right .searchform{
+    display: flex;
+}
+.navigationbar .right .searchform .searchbutton img{
+    cursor: pointer;
+    width: 1.5rem;
+}
+
+.content::before{
+    content: ' ';
+    background: url(../img/background.jpg) no-repeat center center/cover;
+    position: absolute;
+    height:63%;
+    width: 100%;
+    opacity: 0.95;
+    z-index: -1;
+}
+.content{
+    height:64vh;
+    display:flex;
+    flex-direction: column ;
+    justify-content:space-around;
+}
+.content .c-top{
+    width: 65%;
+    text-align: center;
+}
+
+.content .c-top .heading h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 8px;
+    
+}
+.content .c-top .heading .firsth{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5.5rem;
+    color: white;
+    font-weight: 800;
+    
+}
+.content .c-top .heading{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contactlogos .contactlogosinside {
+    filter: invert(1);
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    height: 110px;
+    align-items: center;
+    
+}
+
+.contactlogos .contactlogosinside img{
+    cursor: pointer;
+}
+.contactlogos .contactlogosinside img:hover{
+    width:103%;
+}
+
+.articles .article img {
+    display: block;
+    width:100%;
+    
+}
+.article{
+    margin: 0 auto;
+margin-bottom: 30px;
+border: 1px solid rgb(236 236 236);
+margin-top: 10px;}
+
+.articles .articlecontent{
+    width:70%;
+    margin: auto;
+}
+.articles .articlecontent .heading{
+padding: 10px 23px;
+}
+.articles .articlecontent .heading a{
+font-size: 25px;
+text-decoration: none;}
+.articles .articlecontent .actualarticle{
+    padding: 10px 23px;
+    word-spacing: 5px;
+}
+.articles .articlecontent .dateauthor{
+    padding: 10px 23px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.comment{
+    margin: 0 auto;
+}
+.commentsheading {
+    font-size: 25px;
+    text-decoration: none;
+    padding: 12px;
+    border-bottom: 1px solid rgb(184, 160, 160);
+    margin-bottom: 10px;
+}
+.comments{
+    margin: 0 auto;
+}
+
+.actualcomment{
+    margin: 0 auto;
+border-bottom: 1px solid rgb(236 236 236);
+padding: 40px 0px 0px;
+}
+
+.cmt{
+    display: block;
+width: 100%;
+padding: 20px 2px;
+margin: 10px 0px 0px;
+margin-bottom: 10px;
+border: 1px solid rgb(133, 133, 133);
+outline: none;
+
+}
+
+.sub:hover{
+    cursor: pointer;
+    background-color: rgb(133,133,133);
+    color:white;
+}
+
+.footer{
+
+    height:300px;
+    background-color: rgb(64 59 59);
+    display: flex;
+    align-items: center;
+    
+}
+.footer .footerinside {
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+}
+.footer .footerinside .footleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer .footerinside .footlefttop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer .footerinside .footlefttop img{
+    width: 150px;
+}
+.footer .footerinside .footlefttop .Aboutme{
+    padding:20px;
+    padding-top: 15px;
+    width: 65%;
+    word-spacing: 2px;
+    
+}
+.footer .footerinside .footlefttop .Aboutme h3 a{
+   color: white; 
+}
+.footer .footerinside .footlefttop .Aboutme h3{
+   padding-bottom: 5px;
+ }
+.footer .footerinside .footlefttop .Aboutme div{
+   color:white;
+    
+}
+.footer .footerinside .footleftbottom h4{
+    color:white;
+}
+.footer .footerinside .footright {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.footer .footerinside .footrighttop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#day{
+    color:white;
+}
+.footer .footerinside .footrightbottom{
+    display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.footer .footerinside .footrighttop .joinnowbutton{
+    display: block;
+}
+
+.footer .footerinside .footrighttop .footerblanks{
+    width: 223px;
+    padding: 8px 2px;
+    outline: none;
+    margin:2px;
+    background-color: white;
+    border:1px solid rgb(133,133,133);
+}
+.footer .footerinside .footrighttop .joinnowbutton:hover{
+    cursor: pointer;
+    background-color: rgb(133,133,133);
+    color:white;
+}

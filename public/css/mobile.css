@@ -1,0 +1,441 @@
+@media(max-width:1000px) and (min-width:724px){
+ /* index.html */
+.articles .article .articlecontent .actualarticle{
+      font-size: 13px;
+    }
+.articles .article .articlecontent .dateauthor{
+     font-size: 11px;
+    }
+.actualcomment{
+  font-size:13px;
+}    
+.contactlogos .contactlogosinside{
+    padding: 0;
+}
+.footer .footerinside .footleft .footlefttop .Aboutme div{
+    font-size: 13px;
+}    
+.footer .footerinside .footleft .footleftbottom h4{
+    font-size: 15px;
+}    
+/* about page */
+.myself{
+    flex-direction: column;
+    justify-content: center;
+}
+.myself .right{
+    height: 224px;
+    width:70%;
+}
+.myself .rightinside{
+    font-size: 13px;
+}
+.myself .rightinside h2{
+    padding-top:30px;
+}
+/* contact page */
+.Form{
+    width:80%;
+}
+.Form .formtop{
+    flex-direction: column;
+}
+.contact-content .Form .formtop .formleft {
+    width: 100%;
+}
+.contact-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.contact-content .Form .formtop .formright {
+    width: 100%;
+}
+.contact-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .formtop .formleft {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .formtop .formright {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+/* blog page */
+.youcanreads .youcanread .youcanreadheading{
+    font-size: 16px;
+    text-align: center;
+}
+.youcanreads .youcanread .youcanreadactualarticle{
+    font-size: 10px;
+    padding: 0 9px;
+}
+}
+
+@media(max-width:724px) and (min-width:624px){
+    /* index.html */
+    .articles .article{
+        width: 84%;
+     }
+    .content .c-top .heading .firsth{
+        font-size: 4.5rem;
+    }
+   
+    .articles .article .articlecontent .actualarticle{
+        font-size: 13px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+  .articles .article .articlecontent .dateauthor{
+       font-size: 11px;
+      }
+      .actualcomment{
+        font-size:13px;
+      }    
+  .contactlogos .contactlogosinside{
+      padding: 0;
+  }
+  .footer .footerinside .footleft .footlefttop .Aboutme div{
+      font-size: 13px;
+  }    
+  .footer .footerinside .footleft .footleftbottom h4{
+      font-size: 13px;
+  }   
+  .footer .footerinside .footrighttop .footerblanks{
+    width: 170px;
+    padding: 7px 2px;
+}
+.footer .footerinside .footright{
+    width: 78%;
+}
+
+/* about page */
+.myself{
+    flex-direction: column;
+    justify-content: center;
+}
+.myself .left{
+    width:40%;
+}
+.myself .right{
+    height: 270px;
+    width:70%;
+}
+.myself .rightinside{
+    font-size: 13px;
+}
+.myself .rightinside h2{
+    padding-top:30px;
+}
+/* contact page */
+.Form{
+    width:80%;
+}
+.Form .formtop{
+    flex-direction: column;
+}
+.contact-content .Form .formtop .formleft {
+    width: 100%;
+}
+.contact-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.contact-content .Form .formtop .formright {
+    width: 100%;
+}
+.contact-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.contact-content .Form .details .contactblanks{
+     padding: 14px 2px;
+}
+.yblog-content .Form .formtop .formleft {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .formtop .formright {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .details .contactblanks{
+     padding: 14px 2px;
+}
+/* blog page */
+.youcanreads .youcanread .youcanreadheading{
+    font-size: 16px;
+    text-align: center;
+}
+.youcanreads .youcanread .youcanreadactualarticle{
+    font-size: 9px;
+    padding: 0 6px;
+}
+
+}
+  @media(max-width:624px) and (min-width:500px){
+   /* index.html */
+    .articles .article{
+        width: 84%;
+     }
+    .content{
+        height: 52vh;
+    }
+    .content::before{
+        height:50%;
+    }
+    .content .c-top .heading .firsth{
+        font-size: 3.5rem;
+    }
+    .content .c-top .heading{
+        height: 216px;
+    }
+    .articles .article .articlecontent .actualarticle{
+        font-size: 13px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    .articles .article .articlecontent .heading a{
+        font-size: 20px;
+      }
+  .articles .article .articlecontent .dateauthor{
+       font-size: 11px;
+      }
+      .commentsheading{
+        font-size:20px;
+      }    
+      .actualcomment{
+        font-size:13px;
+      }    
+  .contactlogos .contactlogosinside{
+      padding: 0;
+  }
+  .footer{
+    height: 220px;
+  }
+  .footer .footerinside .footleft .footlefttop .Aboutme div{
+      font-size: 13px;
+  }    
+  .footer .footerinside .footleft .footleftbottom h4{
+      font-size: 13px;
+  }    
+  .footer .footerinside .footrighttop .footerblanks{
+    width: 156px;
+    padding: 7px 2px;
+}
+.footer .footerinside .footlefttop img{
+   display:none;
+}
+.footer .footerinside .footright{
+    width: 78%;
+}
+#day{
+    font-size: 13px;
+}
+/* about page */
+.myself{
+    flex-direction: column;
+    justify-content: center;
+}
+.myself .left{
+    width:40%;
+}
+.myself .right{
+    height: 300px;
+    width:70%;
+}
+.myself .rightinside{
+    font-size: 12px;
+}
+.myself .rightinside h2{
+    padding-top:30px;
+}
+/* contact page */
+.Form{
+    width:80%;
+}
+.Form .formtop{
+    flex-direction: column;
+}
+.contact-content .Form .formtop .formleft {
+    width: 100%;
+}
+.contact-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.contact-content .Form .formtop .formright {
+    width: 100%;
+}
+.contact-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.contact-content .Form .details .contactblanks{
+    padding: 14px 2px;
+}
+.yblog-content .Form .formtop .formleft {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .formtop .formright {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .details .contactblanks{
+    padding: 14px 2px;
+}
+/* blog page */
+.youcanreads {
+    flex-direction: column;
+    align-items: center;
+    height: 1500px;
+
+}
+.youcanread{
+    width: 94%;
+}
+}
+
+@media(max-width:500px){
+    /* index.html */
+    .articles .article{
+        width: 90%;
+     }
+    .openbutton{
+        cursor: pointer;
+        display: block;
+    }
+    .navigationbar .left .navops{
+       visibility: hidden;
+    }
+    .content{
+        height: 52vh;
+    }
+    .content::before{
+        height:50%;
+    }
+    .content .c-top .heading .firsth{
+        font-size: 2.2rem;
+    }
+    .content .c-top .heading{
+        height: 216px;
+    }
+    .articles .article .articlecontent .actualarticle{
+        font-size: 10px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    .articles .article .articlecontent .heading a{
+        font-size: 15px;
+      }
+  .articles .article .articlecontent .dateauthor{
+       font-size: 11px;
+      }
+      .commentsheading{
+        font-size:15px;
+      }    
+      .actualcomment{
+        font-size:10px;
+      }    
+  .contactlogos .contactlogosinside{
+      padding: 0;
+  }
+  .footer{
+    height: 220px;
+  }
+  .footer .footerinside .footleft .footlefttop .Aboutme h3{
+    font-size: 15px;
+  }    
+  .footer .footerinside .footleft .footlefttop .Aboutme div{
+    font-size: 9px;
+  }    
+  .footer .footerinside .footleft .footleftbottom h4{
+      font-size: 11px;
+  }    
+  .footer .footerinside .footrighttop .footerblanks{
+    width: 156px;
+    padding: 7px 2px;
+}
+.footer .footerinside .footlefttop img{
+   display:none;
+}
+.footer .footerinside .footright{
+    width: 108%;
+}  
+#day{
+        font-size:13px;
+}
+/* about page */
+.myself{
+    flex-direction: column;
+    justify-content: center;
+}
+.myself .left{
+    width:55%;
+}
+.myself .right{
+    height: 271px;
+    width:70%;
+}
+.myself .rightinside{
+    font-size: 10px;
+}
+.myself .rightinside h2{
+    padding-top:30px;
+}
+/* contact page */
+.Form{
+    width:80%;
+}
+.Form .formtop{
+    flex-direction: column;
+}
+.contact-content .Form .formtop .formleft {
+    width: 100%;
+}
+.contact-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.contact-content .Form .formtop .formright {
+    width: 100%;
+}
+.contact-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.contact-content .Form .details .contactblanks{
+    padding: 14px 2px;
+}
+.yblog-content .Form .formtop .formleft {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formleft .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .formtop .formright {
+    width: 100%;
+}
+.yblog-content .Form .formtop .formright .details input{
+    width: 97.5%;
+}
+.yblog-content .Form .details .contactblanks{
+    padding: 14px 2px;
+}
+/* blog page */
+.youcanreads {
+    flex-direction: column;
+    align-items: center;
+    height: 1291px;
+
+}
+.youcanread{
+    width: 94%;
+}
+}

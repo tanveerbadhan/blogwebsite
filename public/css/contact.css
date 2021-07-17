@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    color:black;
+   box-sizing: border-box;
+    
+
+}
+.contact-content::before{
+    content: ' ';
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    height:140%;
+    width: 100%;
+    opacity: 0.95;
+    z-index: -1;
+    filter:blur(3px);
+}
+.contact-content{
+    height:100vh;
+    display:flex;
+    flex-direction: column ;
+    justify-content:center;
+}
+.contact-content .c-top{
+    width: 65%;
+    text-align: center;
+}
+.contact-content .c-top .heading .firsth{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    
+}
+.contact-content .c-top .heading h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    
+}
+.contact-content .Form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-content .formtop{
+    display: flex;
+}
+.contact-content .Form .formtop .formleft{
+    display: block;
+    width: 50%;
+}
+.contact-content .Form .formtop .formright{
+    display: block;
+    width: 50%;
+}
+.contact-content .Form .details .contactblanks {
+    display: block;
+    width: 95%;
+    padding: 20px 2px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.contact-content .Form .contactblanks {
+    display: block;
+    width: 97.5%;
+    padding: 20px 2px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(133,133,133);
+}
+.contact-content .Form .sub:hover{
+    cursor: pointer;
+    background-color: rgb(133,133,133);
+    color:white;
+}

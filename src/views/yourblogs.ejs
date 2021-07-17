@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/yourblog.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>website</title>
+</head>
+
+<body>
+
+
+    <%-include("partials/navbar")%> 
+
+
+    <div class="articles maxwidth1 mauto">
+    <%for(var i=0;i<yourblogdata.length ; i++){ %>
+    <div class="article maxwidth2 ">
+        <img src="uploads/<%=yourblogdata[i].file%>" alt="Unable to load Image">
+        <div class="articlecontent">
+            <div class="heading"><%=yourblogdata[i].heading%>.</div>
+            <div class="actualarticle"><%=yourblogdata[i].experience%>. </div>
+            <div class="dateauthor">
+                <div class="date"><%=yourblogdata[i].date%></div>
+                <div class="author"><%=yourblogdata[i].name%></div>
+            </div>
+        </div>
+    </div>
+
+    <%}%> 
+    
+</div>
+        
+
+    <div class="yblog-content">
+        <div class="Form maxwidth2 mauto">
+       <form action="yourblogsus" method="POST" enctype="multipart/form-data">
+                <div class="formtop">
+                    <div class="formleft">
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Name" name="name"></div>
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Heading" name="heading"></div>
+                        
+                    </div>
+                    <div class="formright">
+                        <div class="details"><input class="contactblanks" type="text" placeholder="Date ex-jan/21" name="date"></div>
+                        <div class="details"><input class="contactblanks" type="file"  name="file"></div>
+                    </div>
+                </div>
+                
+                <div class="formbottom">
+                    <div class="feedback"><textarea class="contactblanks feed" name="experience" id="" cols="30" rows="10"
+                            placeholder="Tell us your experience"></textarea></div>
+                    <div class="submit"><input class="contactblanks sub" type="submit" value="submit"></div>
+                </div>
+
+
+          </form>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <%-include("partials/footer")%>
