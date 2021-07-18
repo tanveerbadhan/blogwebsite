@@ -17,7 +17,9 @@ function closephonenavbar()
     a=0;
 }
 
-
+function searchsubmit() {
+    document.getElementById("searchquery").submit();
+}
 
 const getcurrentdate = ()=>{
 

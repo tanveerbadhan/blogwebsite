@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 
 const yourblogschema = new mongoose.Schema({
-    name:String,
+    location:String,
     heading:String,
     date:String,
     filepath:String,

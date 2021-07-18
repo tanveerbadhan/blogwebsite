@@ -18,12 +18,16 @@
         </ul>
         </div>
         <div class="right">
-            <div class="searchform" >
-                <input type="text" class="search" name="query" placeholder="Search">
-                    <a href="/search" class="searchbutton"><img src="img/search.png" alt="Unable to load image"></a>
-                  
-            </div>
-
+            
+            
+                <form action="searchpost" id="searchquery" method="get">
+                    <div class="searchform" >
+                <input type="text" class="search" name="location" placeholder="Search location">
+                    <a onclick="searchsubmit()" class="searchbutton"><img src="img/search.png" alt="Unable to load image"></a> 
+                    </div> 
+                </form>
+            
+             
 
         </div>
         

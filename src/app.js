@@ -76,8 +76,25 @@ app.get("/contact",(req,res)=>{
  res.render("contact");
 });
 
-app.get("/search",(req,res)=>{
-    res.render("search");
+app.get("/searchpost",async(req,res)=>{
+    try{
+        if(req.query.location!="")
+        {let regex = new RegExp(req.query.location,'i');
+        const t= await Yourblog.find({location:regex});
+        
+        res.render("search",{
+            yoursearchdata:t
+        });}
+        else{
+            const t= await Yourblog.find({location:"emptylocation"});
+            res.render("search",{
+                yoursearchdata:t
+            });
+        }
+       }catch(e){
+        console.log(e);
+        res.render("search");
+       }
    });
 
 app.get("/blog1",(req,res)=>{
@@ -155,7 +172,7 @@ app.post("/yourblogsus",upload,async(req,res)=>{
     try {
        
        const yourblog = new Yourblog({
-               name:req.body.name,
+               location:req.body.location,
                heading:req.body.heading,
                date:req.body.date,
                filepath:req.file.path,
